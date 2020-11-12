@@ -1,0 +1,14 @@
+{
+  "name": "zsparticle",
+  "url": "https://github.com/rainyt/openfl-wechat-core",
+  "license": "MIT",
+  "tags": ["wechat","build","openfl"],
+  "description": "For Openfl direct generation WeChat game running",
+  "version": "1.0.4",
+  "releasenote": "",
+  "contributors": ["rainy","miao"],
+  "classPath": "Source",
+  "dependencies": {
+
+  }
+}
