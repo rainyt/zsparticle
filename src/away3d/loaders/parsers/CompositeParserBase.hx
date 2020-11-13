@@ -76,7 +76,7 @@ class CompositeParserBase extends ParserBase
     
     override private function onInterval(event : TimerEvent = null) : Void
     {
-        // Debug.trace("important for debug ", this);
+        trace("important for debug ", this);
         super.onInterval(event);
     }
     

@@ -1,6 +1,7 @@
 package away3d.loaders.parsers.particleSubParsers.geometries;
 
 
+import away3d.loaders.parsers.particleSubParsers.values.matrix.Matrix3DCompositeValueSubParser;
 import away3d.core.base.Geometry;
 import away3d.core.base.ParticleGeometry;
 import away3d.loaders.parsers.particleSubParsers.AllIdentifiers;

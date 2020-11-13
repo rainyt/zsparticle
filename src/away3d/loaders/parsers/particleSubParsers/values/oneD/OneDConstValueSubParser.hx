@@ -13,7 +13,7 @@ class OneDConstValueSubParser extends ValueSubParserBase {
 
 	override public function parseAsync(data:Dynamic, frameLimit:Float = 30):Void {
 		super.parseAsync(data, frameLimit);
-        _setter = new OneDConstSetter(_propName, _data.value);
+		_setter = new OneDConstSetter(_propName, _data.value);
 	}
 
 	private static function get_identifier():Dynamic {
