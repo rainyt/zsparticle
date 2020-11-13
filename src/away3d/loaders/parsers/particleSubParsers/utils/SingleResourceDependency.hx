@@ -28,7 +28,6 @@ class SingleResourceDependency extends ResourceDependency
         super(id, req, data, parentParser, retrieveAsRawData, suppressAssetEvents);
         if (_hasLoaded)
         {
-            trace("shared resource");
             for (asset in loadedAssets)
             {
                 assets.push(asset);

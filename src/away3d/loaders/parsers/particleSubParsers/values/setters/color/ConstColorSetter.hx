@@ -16,7 +16,11 @@ class ConstColorSetter extends SetterBase
     
     override public function setProps(prop : ParticleProperties) : Void
     {
-        prop.nodes.set(_propName,_color);
+        if(Reflect.hasField(prop,_propName)){
+            Reflect.setProperty(prop,_propName,_color);
+        }
+        else
+            prop.nodes.set(_propName,_color);
     }
     
     override public function generateOneValue(index : Int = 0, total : Int = 1) : Dynamic

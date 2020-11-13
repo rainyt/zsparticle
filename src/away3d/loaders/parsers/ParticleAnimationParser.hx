@@ -229,6 +229,10 @@ class ParticleInitializer
         _setters = setters;
     }
     
+    /**
+     * TODO，属性可能没有正确赋值
+     * @param prop 
+     */
     public function initHandler(prop : ParticleProperties) : Void
     {
         var setter : SetterBase;

@@ -15,7 +15,11 @@ class OneDConstSetter extends SetterBase
     
     override public function setProps(prop : ParticleProperties) : Void
     {
-        prop.nodes.set(_propName, _value);
+        if(Reflect.hasField(prop,_propName)){
+            Reflect.setProperty(prop,_propName,_value);
+        }
+        else
+            prop.nodes.set(_propName, _value);
     }
     
     override public function generateOneValue(index : Int = 0, total : Int = 1) : Dynamic

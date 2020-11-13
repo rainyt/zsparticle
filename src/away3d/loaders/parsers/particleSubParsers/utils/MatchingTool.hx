@@ -9,7 +9,6 @@ class MatchingTool
         var result : Class<Dynamic> = null;
         for (cls in classes)
         {
-            // trace("查找：",Reflect.getProperty(cls, "identifier"),Std.string(cls));
             if (Reflect.getProperty(cls, "identifier") == identifier)
             {
                 result = cls;
