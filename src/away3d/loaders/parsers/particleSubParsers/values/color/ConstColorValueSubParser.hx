@@ -14,7 +14,7 @@ class ConstColorValueSubParser extends ValueSubParserBase
         super(propName,ValueSubParserBase.CONST_VALUE);
     }
     
-    override public function parseAsync(data : Dynamic, frameLimit : Int = 30) : Void
+    override public function parseAsync(data : Dynamic, frameLimit : Float = 30) : Void
     {
         super.parseAsync(data, frameLimit);
         _setter = new ConstColorSetter(_propName, extractColor(data));

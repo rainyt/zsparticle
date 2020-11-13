@@ -65,8 +65,7 @@ class ParticleSegmentedColorNodeSubParser extends ParticleNodeSubParserBase
             }
             //TODO 未实现
             _segmentPoints.sort(function(a,b){
-                trace("===",a.life,b.life);
-                return a.life > a.life ? -1 : 1;
+                return a.life < a.life ? 1 : -1;
             });
             // _segmentPoints.sortOn("life", Array.NUMERIC | Array.CASEINSENSITIVE);
             //make sure all life values are different
@@ -97,7 +96,6 @@ class ParticleSegmentedColorNodeSubParser extends ParticleNodeSubParserBase
         var i : Int = 0;
         while (i < len)
         {
-            trace(_segmentPoints[i].color.setter);
             segmentPoints.push(new ColorSegmentPoint(_segmentPoints[i].life,cast(_segmentPoints[i].color,ConstColorValueSubParser).setter.generateOneValue()));
             i++;
         }

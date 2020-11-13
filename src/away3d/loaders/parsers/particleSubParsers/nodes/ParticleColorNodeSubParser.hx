@@ -95,7 +95,7 @@ class ParticleColorNodeSubParser extends ParticleNodeSubParserBase
                 cyclePhase = _cyclePhaseValue.setter.generateOneValue();
             }
         }
-        
+
         if (_startColorValue.valueType == ValueSubParserBase.CONST_VALUE && _endColorValue.valueType == ValueSubParserBase.CONST_VALUE)
         {
             _particleAnimationNode = new ParticleColorNode(ParticlePropertiesMode.GLOBAL, _startColorValue.usesMultiplier, _startColorValue.usesOffset, _usesCycle, _usesPhase, _startColorValue.setter.generateOneValue(), _endColorValue.setter.generateOneValue(), cycleDuration, cyclePhase);

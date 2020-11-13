@@ -62,7 +62,6 @@ class ParticleSegmentedScaleNodeSubParser extends ParticleNodeSubParserBase
             }
             //TODO 还没实现修改此方法
             _segmentPoints.sort(function(a,b){
-                trace("===",a.life,b.life);
                 return a.life < a.life ? -1 : 1;
             });
             // _segmentPoints.sortOn("life", Array.NUMERIC | Array.CASEINSENSITIVE);

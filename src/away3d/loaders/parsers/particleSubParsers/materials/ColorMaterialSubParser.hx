@@ -18,7 +18,7 @@ class ColorMaterialSubParser extends MaterialSubParserBase
         super();
     }
     
-    override public function parseAsync(data : Dynamic, frameLimit : Int = 30) : Void
+    override public function parseAsync(data : Dynamic, frameLimit : Float = 30) : Void
     {
         super.parseAsync(data, frameLimit);
     }

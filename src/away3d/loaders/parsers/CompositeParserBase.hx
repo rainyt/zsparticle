@@ -53,7 +53,7 @@ class CompositeParserBase extends ParserBase
         subParser.root = _root;
     }
     
-    override public function parseAsync(data : Dynamic, frameLimit : Int = 15) : Void
+    override public function parseAsync(data : Dynamic, frameLimit : Float = 15) : Void
     {
         // if (Std.is(data, String) || Std.is(data, ByteArray))
         if (Std.is(data, String))
