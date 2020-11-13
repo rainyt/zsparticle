@@ -193,7 +193,8 @@ class ParticleAnimationParser extends CompositeParserBase
         _particleAnimator = new ParticleAnimator(_particleAnimationSet);
         
         //mesh:
-        _particleMesh = new Mesh(_particlegeometryParser.particleGeometry, _particleMaterialParser.material);
+        // _particleMesh = new Mesh(_particlegeometryParser.particleGeometry); //_particleMaterialParser.material
+        _particleMesh = new Mesh(_particlegeometryParser.particleGeometry,_particleMaterialParser.material); //_particleMaterialParser.material
         _particleMesh.bounds = new BoundingSphere();
         _particleMesh.bounds.fromSphere(new Vector3D(), _bounds);
         if (_data.shareAnimationGeometry != null)
@@ -204,7 +205,6 @@ class ParticleAnimationParser extends CompositeParserBase
         {
             _particleMesh.name = _data.name;
         }
-        //_particleMesh.showBounds = true;
         _particleMesh.animator = _particleAnimator;
         finalizeAsset(_particleMesh);
     }

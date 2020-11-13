@@ -1,6 +1,8 @@
 # zsparticle
 Sparticle HAXE for Away3D project
 
+> Sparticle tools: [click here](http://www.effecthub.com/tool)
+
 # Desc
 
 Under construction, the particle effects editor can be used in Away3D.

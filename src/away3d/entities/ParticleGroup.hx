@@ -67,6 +67,7 @@ class ParticleGroup extends ObjectContainer3D
             else
             {
                 addChild(mesh);
+                // mesh.material = null;
             }
         }
     }

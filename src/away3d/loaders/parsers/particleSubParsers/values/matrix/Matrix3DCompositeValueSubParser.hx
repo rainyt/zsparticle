@@ -41,7 +41,7 @@ class Matrix3DCompositeValueSubParser extends ValueSubParserBase
                     dieWithError("Unknown value parser");
                 }
                 //use name property as type
-                var valueParser : ValueSubParserBase = Type.createInstance(valueCls, [transformData.type]);
+                var valueParser : ValueSubParserBase = Type.createInstance(valueCls, [Std.string(transformData.type)]);
                 addSubParser(valueParser);
                 valueParser.parseAsync(subData);
                 _transforms.push(valueParser);
