@@ -20,7 +20,8 @@ class ParticleBillboardNodeSubParser extends ParticleNodeSubParserBase
         {
             if (_data && _data.usesAxis)
             {
-                _particleAnimationNode = new ParticleBillboardNode(new Vector3D(_data.axisX, _data.axisY, _data.axisZ));
+                var v3 = new Vector3D(_data.axisX, _data.axisY, _data.axisZ);
+                _particleAnimationNode = new ParticleBillboardNode(v3);
             }
             else
             {

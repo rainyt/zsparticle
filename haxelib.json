@@ -1,13 +1,13 @@
 {
   "name": "zsparticle",
-  "url": "https://github.com/rainyt/openfl-wechat-core",
+  "url": "https://github.com/rainyt/zsparticle",
   "license": "MIT",
   "tags": ["wechat","build","openfl"],
-  "description": "For Openfl direct generation WeChat game running",
-  "version": "1.0.4",
-  "releasenote": "",
-  "contributors": ["rainy","miao"],
-  "classPath": "Source",
+  "description": "Sparticle System for Away3D",
+  "version": "1.0.0",
+  "releasenote": "Sparticle System for Away3D",
+  "contributors": ["rainy"],
+  "classPath": "src",
   "dependencies": {
 
   }

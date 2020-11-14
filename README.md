@@ -7,6 +7,18 @@ Sparticle HAXE for Away3D project
 
 Under construction, the particle effects editor can be used in Away3D.
 
+# Install
+
+```shell
+haxelib install zsparticle
+```
+
+# USE
+
+```xml
+<haxelib name="zsparticle"/>
+```
+
 # Example
 
 ```haxe
