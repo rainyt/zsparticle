@@ -64,7 +64,7 @@ class CompositeParserBase extends ParserBase
         _isFirstParsing = true;
         if (_root == this)
         {
-            super.parseAsync(data, frameLimit);
+            super.parseAsync(data, Std.int(frameLimit));
             //speed up
             onInterval();
         }
