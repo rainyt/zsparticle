@@ -53,7 +53,7 @@ class ExternalShapeSubParser extends ShapeSubParserBase
     {
         if (_isFirstParsing)
         {
-            if (_data.url)
+            if (_data.url != null)
             {
                 addDependency("default", new URLRequest(_data.url));
             }
