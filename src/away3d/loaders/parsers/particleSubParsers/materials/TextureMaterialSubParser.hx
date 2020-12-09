@@ -35,7 +35,7 @@ class TextureMaterialSubParser extends MaterialSubParserBase
             _smooth = _data.smooth;
             _alphaBlending = _data.alphaBlending;
             _alphaThreshold = _data.alphaThreshold;
-            if (_data.url)
+            if (_data.url != null)
             {
                 var url : URLRequest = new URLRequest(_data.url);
                 addDependency("default1", url);
