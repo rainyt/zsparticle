@@ -22,7 +22,7 @@ class MaterialSubParserBase extends CompositeParserBase
         if (_isFirstParsing)
         {
             _bothSide = _data.bothSide;
-            if (_data.blendMode)
+            if (_data.blendMode != null)
             {
                 _blendMode = _data.blendMode;
             }
